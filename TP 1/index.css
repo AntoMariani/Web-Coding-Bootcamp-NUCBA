@@ -1,0 +1,72 @@
+/* FUENTES */
+@font-face {
+    font-family: "Economica";
+    src: url('./fonts/Economica-Regular.ttf')
+}
+
+@font-face {
+    font-family: "Parisienne";
+    src: url('./fonts/Parisienne-Regular.ttf')
+}
+
+@font-face {
+    font-family: "LeagueScript";
+    src: url('./fonts/LeagueScript-Regular.ttf')
+}
+
+/* TAGS BASICOS */
+h1{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 3em;
+    position: relative;
+    left: -11em;
+    top: 8em;
+    font-family:"LeagueScript";
+}
+
+header{
+    text-align: center;
+    background-image: url(./img/blossom_header2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+body{
+    padding: 0em;
+    margin: 0em;
+}
+
+/* ANCHOR LINKS "a"*/
+
+a:link{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+a:visited {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color:whitesmoke;
+    text-decoration: none;
+}
+      
+a:active {
+    color:whitesmoke;
+}
+
+/* CLASES */
+.navigation_bar{
+    position: relative;
+    left: -34em;
+    top: 25em;
+    color:whitesmoke;
+    font-family: "Arial Narrow";
+    
+}
+
