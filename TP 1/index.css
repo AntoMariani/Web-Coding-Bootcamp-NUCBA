@@ -14,6 +14,16 @@
     src: url('./fonts/LeagueScript-Regular.ttf')
 }
 
+@font-face {
+    font-family: "Poems_Text";
+    src: url('./fonts/OpenSansCondensed-Bold.ttf')
+}
+
+@font-face {
+    font-family: "Poems_Title";
+    src: url('./fonts/NotoSans-Regular.ttf')
+}
+
 /* TAGS BASICOS */
 h1{
     display: inline-block;
@@ -63,10 +73,56 @@ a:active {
 /* CLASES */
 .navigation_bar{
     position: relative;
-    left: -34em;
-    top: 25em;
+    left: -33em;
+    top: 22em;
     color:whitesmoke;
     font-family: "Arial Narrow";
     
 }
 
+/* Split the screen in half */
+.column_left{
+    float: left;
+    width: 50%;
+    display: block;
+    text-align: justify;
+  }
+
+.column_right{
+    float: right;
+    width: 50%;
+    display: block;
+  }
+
+  .row{
+      height: 100vh;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .title_poem{
+      font-family: "Poems_Title";
+      font-size: 3em;
+  }
+
+  .Contact_form{
+      height: 100vh;
+      text-align: center;
+      font-family: "Poems_Title";
+      background: rgb(190,190,190);
+      background: linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(105,105,105,1) 69%, rgba(68,68,68,1) 100%);
+      padding-top: 2em;
+  }
+
+.Contact_form h2{
+    font-size: 2em;
+}
+
+.Contact_form p{
+    font-size: 1em;
+}
