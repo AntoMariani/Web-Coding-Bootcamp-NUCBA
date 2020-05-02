@@ -1,0 +1,96 @@
+/* FUENTES */
+
+@font-face {
+    font-family: "h2_title";
+    src: url('./fonts/Superdie.otf')
+}
+
+/* TAGS BASICOS */
+
+body{
+    background-image: url(./img/rachel_teen_titans.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0em;
+}
+
+
+/* Color y quitar underline a anchors */
+
+/* a:link{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+a:visited {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color:whitesmoke;
+    text-decoration: none;
+}
+      
+a:active {
+    color:whitesmoke;
+} */
+
+/* CLASES */
+
+    /* MAIN */
+        /* COLUMNAS */
+.row{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    padding:0em;
+    margin:0em;
+}
+
+        /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+        
+        /* TITULOS POEMAS */
+.column_left{
+    float: left;
+    width: 80%;
+    height: 100vh;
+}
+
+        /* TEXTOS POEMAS */
+.column_right{
+    float: right;
+    width: 20%;
+    position: relative;
+    top: 4em;
+}
+
+.column_right img{
+    height: 14em;
+}
+
+.column_right body{
+    background: rgba(0, 0, 0, 1);
+}
+
+.Login_nav{
+    position: relative;
+    top: 17em;
+}
+
+
+/* FORMULARIO DE INICIO DE SESIÓN */
+input{
+    font-size: 0.8em;
+}
+
+label{
+    font-size: 1.4em;
+}
+
