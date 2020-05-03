@@ -1,50 +1,30 @@
 /* FUENTES */
 
 @font-face {
-    font-family: "h2_title";
-    src: url('./fonts/Superdie.otf')
+    font-family: "NotoSans";
+    src: url('./fonts/NotoSans-Regular.ttf')
 }
 
 /* TAGS BASICOS */
 
 body{
+    margin: 0em;
+    padding: 0em;
     background-image: url(./img/rachel_teen_titans.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin: 0em;
+    height: 100vh;
+    overflow: hidden;
 }
-
-
-/* Color y quitar underline a anchors */
-
-/* a:link{
-    color:whitesmoke;
-    text-decoration: none;
-}
-
-a:visited {
-    color:whitesmoke;
-    text-decoration: none;
-}
-
-a:hover {
-    color:whitesmoke;
-    text-decoration: none;
-}
-      
-a:active {
-    color:whitesmoke;
-} */
 
 /* CLASES */
 
     /* MAIN */
         /* COLUMNAS */
+
 .row{
-    height: 100vh;
     text-align: center;
-    position: relative;
     padding:0em;
     margin:0em;
 }
@@ -56,41 +36,70 @@ a:active {
     clear: both;
 }
         
-        /* TITULOS POEMAS */
+        /* COLUMNA VACIA */
 .column_left{
+    height: 100vh;
     float: left;
     width: 80%;
-    height: 100vh;
 }
-
-        /* TEXTOS POEMAS */
+        /* COLUMNA LOGIN */
 .column_right{
+    height: 100vh;
     float: right;
     width: 20%;
     position: relative;
-    top: 4em;
+    padding-top: 4em;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
+    /* USER IMG */
 .column_right img{
-    height: 14em;
-}
-
-.column_right body{
-    background: rgba(0, 0, 0, 1);
-}
-
-.Login_nav{
-    position: relative;
-    top: 17em;
+    height: 10em;
 }
 
 
 /* FORMULARIO DE INICIO DE SESIÓN */
-input{
+.form_login input{
     font-size: 0.8em;
+    border: 0.3px solid #482F95; ;
+    color: whitesmoke;
+    background-color: silver;
+    border-radius: 25px;
+    padding: 12px;
 }
 
-label{
-    font-size: 1.4em;
+.form_login label{
+    font-size: 1em;
+    font-family: "NotoSans";
+    color: #C02563;
+    position: relative;
+    bottom: 0.3em;
+}
+
+.form_login .button {
+    background-color: #C02563;
+}
+
+/* "links" para restablecer */
+.Login_nav{
+    position: relative;
+    top: 4em;
+    color: white;
+}
+
+/* Color links */
+.Login_nav a:link{
+    color:silver;
+    text-decoration: none;
+    font-family: "NotoSans";
+    font-size: 0.7em;
+}
+
+.Login_nav a:visited {
+    color: silver;
+}
+
+.Login_nav a:hover {
+    color: #482F95;
 }
 
