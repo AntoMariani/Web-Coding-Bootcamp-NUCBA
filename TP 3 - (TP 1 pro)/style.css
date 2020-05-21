@@ -1,0 +1,163 @@
+/* FUENTES */
+
+@font-face {
+    font-family: "Economica";
+    src: url('./fonts/Economica-Regular.ttf')
+}
+
+@font-face {
+    font-family: "Parisienne";
+    src: url('./fonts/Parisienne-Regular.ttf')
+}
+
+@font-face {
+    font-family: "LeagueScript";
+    src: url('./fonts/LeagueScript-Regular.ttf')
+}
+
+@font-face {
+    font-family: "Poems_Text";
+    src: url('./fonts/OpenSansCondensed-Light.ttf')
+}
+
+@font-face {
+    font-family: "Poems_Title";
+    src: url('./fonts/NotoSans-Regular.ttf')
+}
+
+/* TAGS BASICOS */
+h1{
+    display: inline-block;
+    color: whitesmoke;
+    font-size: 3em;
+    position: relative;
+    left: -11em;
+    top: 10em;
+    font-family:"LeagueScript";
+}
+
+header{
+    text-align: center;
+    background-image: url(./img/blossom_header2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+body{
+    padding: 0em;
+    margin: 0em;
+}
+
+main{
+    background: rgb(205,205,205);
+    background: linear-gradient(0deg, rgba(205,205,205,1) 15%, rgba(0,0,0,1) 87%);
+}
+
+/* Color y quitar underline a anchors */
+
+a:link{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+a:visited {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+a:hover {
+    color:whitesmoke;
+    text-decoration: none;
+}
+      
+a:active {
+    color:whitesmoke;
+}
+
+/* CLASES */
+
+    /* NAV HEADER */
+.navigation_bar{
+    position: relative;
+    left: -33em;
+    top: 28em;
+    color:whitesmoke;
+    font-family: "Arial Narrow";
+}
+
+
+    /* MAIN */
+        /* COLUMNAS */
+.row{
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    padding:1em;
+    margin:0em;
+}
+
+        /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row_1{
+    color:whitesmoke;
+}
+        
+        /* TITULOS POEMAS */
+.column_left{
+    float: left;
+    width: 50%;
+    position: relative;
+    top: 15em;
+}
+
+        /* TEXTOS POEMAS */
+.column_right{
+    float: right;
+    width: 50%;
+    position: relative;
+    top: 4em;
+}
+
+.title_poem{
+    font-family: "Poems_Title";
+    font-size: 3em;
+}
+
+.text_poems{
+    font-family: "Poems_Text";
+    max-width: 35em;
+}
+
+.row_1 .text_poems{
+    text-align: left;
+}
+
+.row_2 .text_poems{
+    text-align: right;
+}
+
+/* FORMULARIO DE CONTACTO */
+.Contact_form{
+      height: 100vh;
+      text-align: center;
+      font-family: "Poems_Title";
+      background: rgb(0,0,0);
+      background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(205,205,205,1) 87%);
+      padding-top: 0em;
+}
+
+.Contact_form h2{
+    font-size: 2em;
+    display: inline-block;
+}
+
+.Contact_form p{
+    font-size: 1em;
+}
