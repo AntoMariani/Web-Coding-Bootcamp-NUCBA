@@ -1,20 +1,4 @@
 /* FUENTES */
-
-@font-face {
-    font-family: "Economica";
-    src: url('./fonts/Economica-Regular.ttf')
-}
-
-@font-face {
-    font-family: "Parisienne";
-    src: url('./fonts/Parisienne-Regular.ttf')
-}
-
-@font-face {
-    font-family: "LeagueScript";
-    src: url('./fonts/LeagueScript-Regular.ttf')
-}
-
 @font-face {
     font-family: "OpenSansCondensed-Light";
     src: url('./fonts/OpenSansCondensed-Light.ttf')
@@ -23,16 +7,6 @@
 @font-face {
     font-family: "OpenSansCondensed-Bold";
     src: url('./fonts/OpenSansCondensed-Bold.ttf')
-}
-
-@font-face {
-    font-family: "NotoSans-Regular";
-    src: url('./fonts/NotoSans-Regular.ttf')
-}
-
-@font-face {
-    font-family: "AmaticSC-Bold";
-    src: url('./fonts/AmaticSC-Bold.ttf')
 }
 
 /* ANIMACIONES */
@@ -44,7 +18,6 @@
 
 @keyframes shadow-text{
     0%{text-shadow: none;}
-    /* 100%{text-shadow: -4px 3px 0 #fcbaeb, -14px 7px 0 #c6c8d4;} */
     100%{text-shadow: -1px 1px 0 #c6c8d4;}
 }
 
@@ -56,11 +29,7 @@ h1{
     font-family:"OpenSansCondensed-Bold";
     animation-name: shadow-text;
     animation-duration: 6s;
-    /* text-shadow: -4px 3px 0 #fcbaeb, -14px 7px 0 #c6c8d4; */
-    text-shadow:  -1px 1px 0 #c6c8d4;
-
-    
-    
+    text-shadow:  -1px 1px 0 #c6c8d4;  
 }
 
 body{
@@ -81,7 +50,7 @@ nav
 }
 
 a{
-    font-family: OpenSansCondensed-Light;
+    font-family: "OpenSansCondensed-Light";
 }
 
 /* CLASES */
@@ -137,104 +106,9 @@ a:visited {
 a:hover {
     color:whitesmoke;
     text-decoration: none;
-    /* background-color: rgba(198, 200, 212, 0.41); */
-    /* border-radius: 3px; */
     border-bottom: 1px solid rgba(198, 200, 212, 0.41);
 }
       
 a:active {
     color:whitesmoke;
 }
-
-/* main{
-    background: rgb(205,205,205);
-    background: linear-gradient(0deg, rgba(205,205,205,1) 15%, rgba(0,0,0,1) 87%);
-} */
-
-
-
-/* CLASES */
-
-    /* NAV HEADER */
-/* .navigation_bar{
-    position: relative;
-    left: -33em;
-    top: 28em;
-    color:whitesmoke;
-    font-family: "Arial Narrow";
-} */
-
-
-    /* MAIN */
-        /* COLUMNAS */
-/* .row{
-    height: 100vh;
-    text-align: center;
-    position: relative;
-    padding:1em;
-    margin:0em;
-} */
-
-        /* Clear floats after the columns */
-/* .row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.row_1{
-    color:whitesmoke;
-} */
-        
-        /* TITULOS POEMAS */
-/* .column_left{
-    float: left;
-    width: 50%;
-    position: relative;
-    top: 15em;
-} */
-
-        /* TEXTOS POEMAS */
-/* .column_right{
-    float: right;
-    width: 50%;
-    position: relative;
-    top: 4em;
-}
-
-.title_poem{
-    font-family: "NotoSans-Regular";
-    font-size: 3em;
-}
-
-.text_poems{
-    font-family: "OpenSansCondensed-Light";
-    max-width: 35em;
-}
-
-.row_1 .text_poems{
-    text-align: left;
-}
-
-.row_2 .text_poems{
-    text-align: right;
-} */
-
-/* FORMULARIO DE CONTACTO
-.Contact_form{
-      height: 100vh;
-      text-align: center;
-      font-family: "NotoSans-Regular";
-      background: rgb(0,0,0);
-      background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(205,205,205,1) 87%);
-      padding-top: 0em;
-}
-
-.Contact_form h2{
-    font-size: 2em;
-    display: inline-block;
-}
-
-.Contact_form p{
-    font-size: 1em;
-} */
