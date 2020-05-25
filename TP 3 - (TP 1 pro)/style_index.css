@@ -16,13 +16,36 @@
 }
 
 @font-face {
-    font-family: "Poems_Text";
+    font-family: "OpenSansCondensed-Light";
     src: url('./fonts/OpenSansCondensed-Light.ttf')
 }
 
 @font-face {
-    font-family: "Poems_Title";
+    font-family: "OpenSansCondensed-Bold";
+    src: url('./fonts/OpenSansCondensed-Bold.ttf')
+}
+
+@font-face {
+    font-family: "NotoSans-Regular";
     src: url('./fonts/NotoSans-Regular.ttf')
+}
+
+@font-face {
+    font-family: "AmaticSC-Bold";
+    src: url('./fonts/AmaticSC-Bold.ttf')
+}
+
+/* ANIMACIONES */
+
+@keyframes blur-header{
+    0%{-webkit-filter: blur(0px);}
+    100%{-webkit-filter: blur(8px);}
+}
+
+@keyframes shadow-text{
+    0%{text-shadow: none;}
+    /* 100%{text-shadow: -4px 3px 0 #fcbaeb, -14px 7px 0 #c6c8d4;} */
+    100%{text-shadow: -1px 1px 0 #c6c8d4;}
 }
 
 
@@ -30,43 +53,76 @@
 h1{
     color: whitesmoke;
     font-size: 3em;
-    font-family:"Poems_Title";
+    font-family:"OpenSansCondensed-Bold";
+    animation-name: shadow-text;
+    animation-duration: 6s;
+    /* text-shadow: -4px 3px 0 #fcbaeb, -14px 7px 0 #c6c8d4; */
+    text-shadow:  -1px 1px 0 #c6c8d4;
+
+    
+    
+}
+
+body{
+    margin: 0em;
 }
 
 header{
     display: flex;
     flex-direction: column;
+}
+nav
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    font-family: OpenSansCondensed-Light;
+}
+
+/* CLASES */
+
+.cont-hdr{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.fondoBlureado{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
     background-image: url(./img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 100vh;
 }
 
-.title-sub-header{
+.fondoRelative {
     width: 100%;
     height: 100vh;
 }
 
+.fondoBlureado {
+    animation-name: blur-header;
+    animation-duration: 6s;
+    -webkit-filter: blur(8px);
+}
+
 .subtitle{
     color: whitesmoke;
-    font-family: "Poems_Text";
+    font-family: "OpenSansCondensed-Light";
     font-size: 2em;
 }
 
-body{
-    padding: 0em;
-    margin: 0em;
-}
-
-main{
-    background: rgb(205,205,205);
-    background: linear-gradient(0deg, rgba(205,205,205,1) 15%, rgba(0,0,0,1) 87%);
-}
-
-/* Color y quitar underline a anchors */
+/* Color y efecto anchors */
 
 a:link{
     color:whitesmoke;
@@ -81,36 +137,46 @@ a:visited {
 a:hover {
     color:whitesmoke;
     text-decoration: none;
+    /* background-color: rgba(198, 200, 212, 0.41); */
+    /* border-radius: 3px; */
+    border-bottom: 1px solid rgba(198, 200, 212, 0.41);
 }
       
 a:active {
     color:whitesmoke;
 }
 
+/* main{
+    background: rgb(205,205,205);
+    background: linear-gradient(0deg, rgba(205,205,205,1) 15%, rgba(0,0,0,1) 87%);
+} */
+
+
+
 /* CLASES */
 
     /* NAV HEADER */
-.navigation_bar{
+/* .navigation_bar{
     position: relative;
     left: -33em;
     top: 28em;
     color:whitesmoke;
     font-family: "Arial Narrow";
-}
+} */
 
 
     /* MAIN */
         /* COLUMNAS */
-.row{
+/* .row{
     height: 100vh;
     text-align: center;
     position: relative;
     padding:1em;
     margin:0em;
-}
+} */
 
         /* Clear floats after the columns */
-.row:after {
+/* .row:after {
     content: "";
     display: table;
     clear: both;
@@ -118,18 +184,18 @@ a:active {
 
 .row_1{
     color:whitesmoke;
-}
+} */
         
         /* TITULOS POEMAS */
-.column_left{
+/* .column_left{
     float: left;
     width: 50%;
     position: relative;
     top: 15em;
-}
+} */
 
         /* TEXTOS POEMAS */
-.column_right{
+/* .column_right{
     float: right;
     width: 50%;
     position: relative;
@@ -137,12 +203,12 @@ a:active {
 }
 
 .title_poem{
-    font-family: "Poems_Title";
+    font-family: "NotoSans-Regular";
     font-size: 3em;
 }
 
 .text_poems{
-    font-family: "Poems_Text";
+    font-family: "OpenSansCondensed-Light";
     max-width: 35em;
 }
 
@@ -152,13 +218,13 @@ a:active {
 
 .row_2 .text_poems{
     text-align: right;
-}
+} */
 
-/* FORMULARIO DE CONTACTO */
+/* FORMULARIO DE CONTACTO
 .Contact_form{
       height: 100vh;
       text-align: center;
-      font-family: "Poems_Title";
+      font-family: "NotoSans-Regular";
       background: rgb(0,0,0);
       background: linear-gradient(0deg, rgba(0,0,0,1) 15%, rgba(205,205,205,1) 87%);
       padding-top: 0em;
@@ -171,4 +237,4 @@ a:active {
 
 .Contact_form p{
     font-size: 1em;
-}
+} */
