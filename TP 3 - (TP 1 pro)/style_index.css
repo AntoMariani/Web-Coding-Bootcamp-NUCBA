@@ -10,12 +10,12 @@
 }
 
 /* ANIMACIONES */
-
+/* blur de la imagen de fondo del header */
 @keyframes blur-header{
     0%{-webkit-filter: blur(0px);}
     100%{-webkit-filter: blur(8px);}
 }
-
+/* sombra al texto del h1 */
 @keyframes shadow-text{
     0%{text-shadow: none;}
     100%{text-shadow: -1px 1px 0 #c6c8d4;}
@@ -40,6 +40,7 @@ header{
     display: flex;
     flex-direction: column;
 }
+
 nav
 {
     width: 100%;
@@ -51,10 +52,11 @@ nav
 
 a{
     font-family: "OpenSansCondensed-Light";
+    font-size: 1.3em;
 }
 
 /* CLASES */
-
+/* contenido del header: titulo y subtitulo */
 .cont-hdr{
     width: 100%;
     height: 90%;
@@ -64,27 +66,31 @@ a{
     align-items: center;
 }
 
+/* div para que solo la imagen de fondo se blurree */
 .fondoBlureado{
     width: 100%;
     height: 100vh;
     position: absolute;
+    /* para poder darle el index */
     z-index: -1;
+    /* el z index para que quede detras del contenido la imagen */
     background-image: url(./img/header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.fondoRelative {
-    width: 100%;
-    height: 100vh;
-}
-
-.fondoBlureado {
+    /* animacion de blur para el fondo */
     animation-name: blur-header;
     animation-duration: 6s;
     -webkit-filter: blur(8px);
 }
 
+/* section que incluye todo el fondo: el .fondoBlureado .cont-hdr y nav*/
+.fondoRelative {
+    width: 100%;
+    height: 100vh;
+    /* solo estan las propiedades porque el resto estan en cada seccion por separado */
+}
+
+/* clase para el subtitulo */
 .subtitle{
     color: whitesmoke;
     font-family: "OpenSansCondensed-Light";
