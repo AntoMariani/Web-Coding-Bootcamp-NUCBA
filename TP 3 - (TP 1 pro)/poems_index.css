@@ -7,9 +7,11 @@
 /* HTML BASIC TAGS */
 body{
     margin: 0em;
+    background-image: url(./img/poems_index_bck.jfif);
 }
 
 /* CLASES */
+/* grid de toda la pagina */
 .cuadricula-poemas{
     width: 100%;
     height: 100vh;
@@ -17,21 +19,48 @@ body{
     grid-template-columns: repeat(2,1fr);
 }
 
-.poem_title{
-    font-family: "OpenSansCondensed-Light";
-    color: whitesmoke;
-    background-color: black;
-    position: absolute;
-    margin: 0px;
-}
-
-.poem img{
-    width: 10em;
-    height: 10em;
-}
-
+/* Contenedor de cada poema: titulo e imagen*/
 .poem{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.poem_title{
+    font-family: "OpenSansCondensed-Light";
+    color: whitesmoke;
+    position: absolute;
+    margin: 0px;
+}
+
+/* LINKS TITULO DEL POEMA */
+.poem_title:link{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.poem_title:visited {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.poem_title:hover {
+    color:whitesmoke;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+      
+.poem_title:active {
+    color:whitesmoke;
+    text-decoration: none;
+}
+/* imagen del fondo para cada poema */
+.poem img{
+    width: 10em;
+    height: 10em;
+    border-radius: 5em;
+}
+/* efecto borde blanco de la imagen anterior */
+.poem img:hover{
+    border: whitesmoke solid 0.5px;
 }
