@@ -188,3 +188,29 @@ section{
 .poem_5 h1{
     color: whitesmoke;
 }
+
+/* POEMA 6 */
+
+.body_p6{
+    margin: 0em;
+    background-image: url(./img/poem_6_bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poem_6{
+    background-color: rgba(103 , 102, 98, 0.46);
+    height: 90%;
+}
+
+.poem_6 p{
+    background-color: rgba(213, 212, 208,1);
+    color: black;
+    margin: 0.5em;
+    font-size: 1.15em;
+}
+
+.poem_6 h1{
+    color: rgba(213, 212, 208,1);
+}
