@@ -90,7 +90,7 @@ input:focus{
 } 
 
 main{
-    background-image: url(./img/contact_form_bkg.jpg);
+    background-image: url(./img/blossom_contact.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -107,10 +107,9 @@ main{
 .div_form{
     height: 85%;
     width: 35%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10%;
     border-color: whitesmoke;
-    border-style: dotted;
 }
 
 .title_form{
