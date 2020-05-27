@@ -162,3 +162,29 @@ section{
 .poem_4 h1{
     color:rgba(197, 110, 67, 1);
 }
+
+/* POEMA 5 */
+
+.body_p5{
+    margin: 0em;
+    background-image: url(./img/poem_5_bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poem_5{
+    background-color: rgba(218, 171, 148, 0.46);
+    height: 90%;
+}
+
+.poem_5 p{
+    background-color: #87432F;
+    color: whitesmoke;
+    margin: 0.5em;
+    font-size: 1.15em;
+}
+
+.poem_5 h1{
+    color: whitesmoke;
+}
