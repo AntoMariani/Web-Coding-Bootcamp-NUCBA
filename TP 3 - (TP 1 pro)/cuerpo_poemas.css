@@ -136,3 +136,29 @@ section{
 .poem_3 h1{
     color:rgba(226, 95, 114, 1);
 }
+
+/* POEMA 4 */
+
+.body_p4{
+    margin: 0em;
+    background-image: url(./img/poem_4_bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poem_4{
+    background-color: rgba(83, 48, 49, 0.46);
+    height: 90%;
+}
+
+.poem_4 p{
+    background-color: rgba(197, 110, 67, 1);
+    color: whitesmoke;
+    margin: 0.5em;
+    font-size: 1.15em;
+}
+
+.poem_4 h1{
+    color:rgba(197, 110, 67, 1);
+}
