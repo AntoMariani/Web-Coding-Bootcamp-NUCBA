@@ -1,0 +1,70 @@
+/* FUENTES */
+@font-face {
+    font-family: "OpenSansCondensed-Light";
+    src: url('./fonts/OpenSansCondensed-Light.ttf')
+}
+
+@font-face {
+    font-family: "OpenSansCondensed-Bold";
+    src: url('./fonts/OpenSansCondensed-Bold.ttf')
+}
+
+/* TAGS */
+
+body{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+    text-align: center;
+    font-family: "OpenSansCondensed-Light";
+    font-weight: bolder;
+    font-size: 3em;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+p{
+    font-family: "OpenSansCondensed-Light";
+    font-size: 1.3em;
+}
+
+/* CLASES E IDS */
+.poem_body{
+    text-align: center;
+}
+
+#poem{
+    border-radius: 1%;
+}
+
+/* POEMA 1 */
+.body_p1{
+    margin: 0em;
+    background-image: url(./img/poem_1_bkg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.poem_1{
+    background-color: rgba(255, 255, 255, 0.46);
+    
+}
+
+.poem_1 p{
+    background-color: #5F6795;
+    color: white;
+    margin: 0.5em;
+}
+
+.poem_1 h1{
+    color:#5F6795;
+}
