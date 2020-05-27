@@ -7,7 +7,10 @@
 /* HTML BASIC TAGS */
 body{
     margin: 0em;
-    background-image: url(./img/poems_index_bck.jfif);
+    background-image: url(./img/poems_background_2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* CLASES */
@@ -31,6 +34,7 @@ body{
     color: whitesmoke;
     position: absolute;
     margin: 0px;
+    font-size: 1.2em;
 }
 
 /* LINKS TITULO DEL POEMA */
@@ -54,13 +58,12 @@ body{
     color:whitesmoke;
     text-decoration: none;
 }
-/* imagen del fondo para cada poema */
-.poem img{
+
+/* color de fondo para cada poema */
+.poem_bkg{
+    background-color: rgba(86, 87, 92, 0.46);
     width: 10em;
     height: 10em;
     border-radius: 5em;
 }
-/* efecto borde blanco de la imagen anterior */
-.poem img:hover{
-    border: whitesmoke solid 0.5px;
-}
+
