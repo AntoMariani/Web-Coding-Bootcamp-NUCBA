@@ -34,13 +34,10 @@ main{
 p{
     font-family: "OpenSansCondensed-Light";
     font-size: 1.3em;
-}
-
-/* CLASES E IDS */
-.poem_body{
     text-align: center;
 }
 
+/* CLASES E IDS */
 #poem{
     border-radius: 1%;
 }
@@ -68,3 +65,5 @@ p{
 .poem_1 h1{
     color:#5F6795;
 }
+
+/* POEMA 2 */
