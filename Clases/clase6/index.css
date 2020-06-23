@@ -1,0 +1,73 @@
+/* Para importar desde la compu */
+
+@font-face {
+    font-family: "Lobster";
+    src: url('./fonts/Lobster-Regular.ttf')
+}
+
+.h2-responsive{
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    display: inline-block;
+    border-bottom: 2px solid indianred;
+}
+
+header{
+    text-align: center;
+    background-image: url(./img/_111515733_gettyimages-1208779325.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    /* responsive como el porcentaje pero sirve cuando uno se adapta al otro y no nos queda */
+    margin-bottom: 20px;
+}
+
+body{
+    padding: 0em;
+    margin: 0em;
+}
+
+.img-article{
+    width: 22%;
+}
+
+article{
+    text-align: center;
+}
+
+.img-article{
+    width: 100%;
+}
+
+.parrafo-article{
+    display: inline-block;
+    font-family: "Lobster";    
+}
+
+.div-article{
+    display: inline-block;
+    width: 25%;
+}
+
+/* BLOQUES PARA EXPLICAR */
+/* SIEMPRE SE SUMA TODO - EL MARGEN CUANDO LE PONGO box-sizing: border-box;  */
+/* .bloque {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    padding: 10px;
+    border: 20px solid red;
+    margin: 10px;
+}
+
+.bloque2 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    padding: 10px;
+    border: 20px solid red;
+    margin: 10px;
+    box-sizing: border-box;
+} */

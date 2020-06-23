@@ -1,0 +1,31 @@
+h1{
+    color:red;
+    border:2px solid blue;
+    text-align: center;
+}
+
+.etiquetaA{
+    color:pink;
+}
+
+.email{
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#idTortitas{
+    color:brown;
+}
+
+#idChingo{
+    color:darkcyan;
+}
+
+.coloresGeneral{
+    color:red;
+}
+
+.img{
+    width: 500px;
+}
