@@ -85,14 +85,18 @@ function relacion(a,b){
     }
 }
 
-var comparacion = relacion(4,2)
-console.log(comparacion)
+// var comparacion = relacion(4,2)
+// console.log(comparacion)
 
-comparacion = relacion(2,4)
-console.log(comparacion)
+console.log(relacion(4,2))
+console.log(relacion(2,4))
+console.log(relacion(2,2))
 
-comparacion = relacion(2,2)
-console.log(comparacion)
+// comparacion = relacion(2,4)
+// console.log(comparacion)
+
+// comparacion = relacion(2,2)
+// console.log(comparacion)
 
 //Ejercicio 7
 //Solicitar al usuario que ingrese su dirección email. Imprimir un
