@@ -1,22 +1,101 @@
+@font-face {
+    font-family: "subtitulos";
+    src: url('./fonts/Raleigh\ Rock.ttf')
+}
+
+@font-face {
+    font-family: "navigation";
+    src: url('./fonts/CF_PunkRockShow.ttf')
+}
+
+/* @keyframes float{
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2%) rotate(1deg);
+    }
+    100% {
+        transform: translateY(1.5%) rotate(-1deg);
+    
+    }
+} */
+
+@keyframes float {
+    0% {
+      transform: skewY(7deg);
+    }
+    100% {
+      transform: skewY(-7deg);
+    }
+  }
+
+
+
 body{
     margin: 0;
     padding: 0;
 }
 
 header{
-    height: 20vh;
-    background-color: red;
+    background-image: url(./img/imageedit_2_2270968079.jpg);
+    background-position: center;
+    background-size: cover;
+    height:  90vh;
     display: flex;
     justify-content: space-around;
+    text-align: center;
     padding: 0;
     margin: 0;
+    flex-direction: column;
+}
+
+header img{
+    animation: float 4s ease-in-out infinite alternate;
 }
 
 header nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text-format-titles_2 {
+    background-color: #E4D1AB;
+    color: #23302E;
+}
+
+.text-format-titles_1{
+    background-color: #A91B1D;
+    color: #E4D1AB;
+}
+
+.text-format-titles_2 , .text-format-titles_1 {
+    padding: 0.3em;
+    font-family: "subtitulos";
+    word-spacing: 0.1em;
 }
 
 header h2{
-    float: left;
+    transition: transform .8s ease-in-out;
+    display: inline-block;
+}
+
+.subtitulos{
+    display: flex;
+    flex-direction: column;
+}
+
+header h2:hover{
+    transform: rotateX(360deg);
+}
+
+nav a{
+    font-family: "navigation";
+    font-size: 2em;
+    color: #E4D1AB ;
+}
+
+nav a:hover{
+    color: #A91B1D;
 }
