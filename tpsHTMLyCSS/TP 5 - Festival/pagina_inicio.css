@@ -8,19 +8,6 @@
     src: url('./fonts/CF_PunkRockShow.ttf')
 }
 
-/* @keyframes float{
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-2%) rotate(1deg);
-    }
-    100% {
-        transform: translateY(1.5%) rotate(-1deg);
-    
-    }
-} */
-
 @keyframes float {
     0% {
       transform: skewY(7deg);
@@ -30,72 +17,61 @@
     }
   }
 
-
-
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
-header{
-    background-image: url(./img/imageedit_2_2270968079.jpg);
-    background-position: center;
-    background-size: cover;
-    height:  90vh;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    flex-direction: column;
+main{
+    margin-left: 5rem;
 }
 
-header img{
+/* ANIMACIÓN DEL LOGO */
+.logo img{
     animation: float 4s ease-in-out infinite alternate;
 }
 
-header nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.navbar{
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
 }
 
-.text-format-titles_2 {
-    background-color: #E4D1AB;
-    color: #23302E;
-}
-
-.text-format-titles_1{
-    background-color: #A91B1D;
-    color: #E4D1AB;
-}
-
-.text-format-titles_2 , .text-format-titles_1 {
-    padding: 0.3em;
-    font-family: "subtitulos";
-    word-spacing: 0.1em;
-}
-
-header h2{
-    transition: transform .8s ease-in-out;
-    display: inline-block;
-}
-
-.subtitulos{
+.navbar-nav{
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    height: 100%;
 }
 
-header h2:hover{
-    transform: rotateX(360deg);
+.nav-item:last-child{
+    margin-top: auto;
 }
 
-nav a{
+#inicio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./img/mikky-koopac-hwQZLREASZk-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+/* nav a{
     font-family: "navigation";
     font-size: 2em;
     color: #E4D1AB ;
-}
+} */
 
-nav a:hover{
+/* nav a:hover{
     color: #A91B1D;
-}
+} */
