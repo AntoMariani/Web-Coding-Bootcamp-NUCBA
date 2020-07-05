@@ -63,7 +63,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 100vh;
 }
 
 .nav-item {
@@ -82,7 +82,7 @@ main{
     font-family: "subtitulos";
     filter: opacity(0.8);
     transition: 200ms ease;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .nav-link:hover {
@@ -114,11 +114,22 @@ main{
 /* CONTENIDO DEL MAIN */
 
 /* subtitulos de cada sección */
+.div-subtitulo{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .subtitulo{
     font-family: "subtitulos";
     color: #E4D1AB;
     text-align: center;
+    font-size: 2.7rem;
+    animation: float 4s ease-in-out infinite alternate;
 }
+
 
 /* id=Inicio */
 #inicio{
@@ -169,7 +180,6 @@ main{
     padding-right: 0.8rem;
 }
 
-
 .fecha-lugar .text-format-titles_1{
     background-color: #E4D1AB;
     color: #A91B1D;
@@ -184,11 +194,34 @@ main{
 #lineup{
     height: 100vh;
     width: 100%;
-    display: flex;
     margin: 0;
     padding: 0;
-    align-items: center;
-    justify-content: space-around;
+    display: flex;
     flex-direction: column;
-    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido-lineup{
+    width: 100%;
+    height: 80vh;
+}
+
+.fecha-lineup , .bands-lineup {
+    font-family: "subtitulos";
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.fecha-lineup{
+    color: #A91B1D;
+    font-size: 1.7rem;
+}
+
+.bands-lineup{
+    color: #E4D1AB;
+    font-size: 1.09rem;
+    font-weight: lighter;
+    text-align: center;
 }
