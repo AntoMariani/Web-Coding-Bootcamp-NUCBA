@@ -1,3 +1,4 @@
+/* FUENTES */
 @font-face {
     font-family: "subtitulos";
     src: url('./fonts/Raleigh\ Rock.ttf')
@@ -8,15 +9,20 @@
     src: url('./fonts/CF_PunkRockShow.ttf')
 }
 
+/* ANIMACIONES */
 @keyframes float {
     0% {
-      transform: skewY(7deg);
+      transform: rotate(-4deg);
     }
     100% {
-      transform: skewY(-7deg);
+      transform: rotate(4deg);
     }
   }
 
+/* SCROLLBAR */
+
+
+/* MAIN AND BODY */
 body{
     margin: 0;
     padding: 0;
@@ -27,23 +33,10 @@ main{
     margin-left: 5rem;
 }
 
-/*LOGO */
-.logo{
-    height: 40%;
-    width: 50%;
-}
-
-.logo img{
-    animation: float 4s ease-in-out infinite alternate;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
 /* Barra de navegación */
 .navbar {
     position: fixed;
-    background-color: black;
+    background-color: #250303;
     transition: width 100ms ease;
     top: 0;
     width: 5rem;
@@ -74,15 +67,16 @@ main{
     align-items: center;
     height: 5rem;
     text-decoration: none;
-    font-family: calibri;
+    font-family: "subtitulos";
     filter: opacity(0.8);
     transition: 200ms ease;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .nav-link:hover {
-    filter: grayscale(0%) opacity(1);
-  }
+    filter: opacity(1);
+    background-color: #701012;
+}
 
 .link-text{
     display: none;
@@ -105,10 +99,7 @@ main{
     display: inline;
 }
 
-.nav-item:hover .link-text{
-    color: #A91B1D;
-}
-
+/* CONTENIDO DEL MAIN */
 /* Página de Inicio */
 #inicio{
     height: 100vh;
@@ -122,4 +113,49 @@ main{
     background-repeat: no-repeat;
     width: 100%;
     z-index: -1;
+}
+
+/*LOGO */
+.logo{
+    height: 15rem;
+    width: 38rem;
+}
+
+.logo img{
+    animation: float 4s ease-in-out infinite alternate;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Subtitulos de #inicio */
+.subtitulos{
+    position: fixed;
+    right: 0rem;
+    top: 1rem;
+    text-align: end;
+    font-family: "subtitulos";
+    transform: skewX(-3deg) skewY(-0.5deg);
+    filter: opacity(0.95);
+    font-size: 1.1rem;
+}
+
+.subtitulos:hover {
+    filter: opacity(3);
+}
+
+.subtitulos .text-format-titles_1 , .subtitulos .text-format-titles_2{
+    padding: 0.4rem;
+    padding-right: 0.8rem;
+}
+
+
+.subtitulos .text-format-titles_1{
+    background-color: #E4D1AB;
+    color: #A91B1D;
+}
+
+.subtitulos .text-format-titles_2{
+    background-color: #A91B1D;
+    color: #E4D1AB;
 }
