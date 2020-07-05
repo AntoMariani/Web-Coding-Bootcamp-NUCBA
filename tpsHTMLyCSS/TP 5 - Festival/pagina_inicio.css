@@ -21,12 +21,24 @@
 
 /* SCROLLBAR */
 
+body::-webkit-scrollbar {
+    width: 0.40rem;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #250303;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #E4D1AB;
+  }
 
 /* MAIN AND BODY */
 body{
     margin: 0;
     padding: 0;
     background-color: black;
+    overflow-x: hidden;
 }
 
 main{
@@ -100,7 +112,15 @@ main{
 }
 
 /* CONTENIDO DEL MAIN */
-/* Página de Inicio */
+
+/* subtitulos de cada sección */
+.subtitulo{
+    font-family: "subtitulos";
+    color: #E4D1AB;
+    text-align: center;
+}
+
+/* id=Inicio */
 #inicio{
     height: 100vh;
     display: flex;
@@ -115,7 +135,7 @@ main{
     z-index: -1;
 }
 
-/*LOGO */
+/*Logo*/
 .logo{
     height: 15rem;
     width: 38rem;
@@ -129,8 +149,8 @@ main{
 }
 
 /* Subtitulos de #inicio */
-.subtitulos{
-    position: fixed;
+.fecha-lugar{
+    position: absolute;
     right: 0rem;
     top: 1rem;
     text-align: end;
@@ -140,22 +160,35 @@ main{
     font-size: 1.1rem;
 }
 
-.subtitulos:hover {
+.fecha-lugar:hover {
     filter: opacity(3);
 }
 
-.subtitulos .text-format-titles_1 , .subtitulos .text-format-titles_2{
+.fecha-lugar .text-format-titles_1 , .fecha-lugar .text-format-titles_2{
     padding: 0.4rem;
     padding-right: 0.8rem;
 }
 
 
-.subtitulos .text-format-titles_1{
+.fecha-lugar .text-format-titles_1{
     background-color: #E4D1AB;
     color: #A91B1D;
 }
 
-.subtitulos .text-format-titles_2{
+.fecha-lugar .text-format-titles_2{
     background-color: #A91B1D;
     color: #E4D1AB;
+}
+
+/* id=lineup*/
+#lineup{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    
 }
