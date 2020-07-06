@@ -365,7 +365,7 @@ main{
     background-color: black;
     height: 40%;
     width: 45%;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
