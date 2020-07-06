@@ -358,10 +358,13 @@ main{
     align-items: center;
 }
 
+.lista-entradas a{
+    text-decoration: none;
+}
+
 /* cada CARD */
 .tipo-entrada{
     margin: 0;
-    /* background-image: url(./img/a33522008e0a472823e7bc91d4cbaafa.jpg); */
     background-color: black;
     height: 40%;
     width: 45%;
@@ -402,6 +405,4 @@ main{
 }
 
 /* -------------------------------- FIN id=entradas --------------------------------*/
-
-
 /* -------------------------------- FIN CONTENIDO DEL MAIN --------------------------------*/
