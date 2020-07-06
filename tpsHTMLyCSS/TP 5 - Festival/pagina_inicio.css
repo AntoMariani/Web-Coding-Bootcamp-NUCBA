@@ -277,7 +277,7 @@ main{
 .tipo-entrada:hover{
     filter: opacity(1);
     border: 0.2rem solid #A91B1D;
-    box-sizing: border-box;
+    margin: -0.2rem; /* para que no se mueva la div cuando aparece el borde en hovers*/
 }
 
 .titulo-tipo-entrada{
