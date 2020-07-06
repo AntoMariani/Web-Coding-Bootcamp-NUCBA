@@ -266,23 +266,37 @@ main{
 .img-media{
     height: 80%;
     width: 80%;
+    overflow: hidden;
 }
 
 .img-media img{
     height: 100%;
     width: 100%;
-    filter: brightness(0.7) contrast(1.8);
-    border-radius: 1rem;
+    filter: brightness(0.8);
 }
 
 .img-media img:hover{
-    filter: brightness(1.1) hue-rotate(0) contrast(1.1);
-    transform: scale(1.03);
-    border-radius: 0.3rem;
-    
+    filter: brightness(1.1);
+    transform: scale(1.1);
+    box-sizing: content-box;
 }
 
 /* -------------------------------- FIN id=media --------------------------------*/
+
+/* -------------------------------- id=historia --------------------------------*/
+#historia{
+        height: 100vh;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        background-image: url(./img/back\ historia.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+/* -------------------------------- FIN id=historia --------------------------------*/
 
 /* -------------------------------- id=entradas --------------------------------*/
 #entradas{
@@ -292,7 +306,7 @@ main{
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-image: url(./img/entradas-background.jpg);
+    background-image: url(./img/pista.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
