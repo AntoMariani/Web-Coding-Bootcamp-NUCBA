@@ -239,6 +239,26 @@ main{
 
 /* -------------------------------- FIN id=lineup --------------------------------*/
 
+/* -------------------------------- id=media --------------------------------*/
+#media{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./img/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagenes-media{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.img-media{
+}
+/* -------------------------------- FIN id=media --------------------------------*/
+
 /* -------------------------------- id=entradas --------------------------------*/
 #entradas{
     height: 100vh;
