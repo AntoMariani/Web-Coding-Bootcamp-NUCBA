@@ -1,3 +1,8 @@
+/* efecto smooth al scrollear */
+html {
+	scroll-behavior: smooth;
+}
+
 /* --------------------------------FUENTES-------------------------------- */
 @font-face {
     font-family: "subtitulos";
@@ -243,7 +248,7 @@ main{
 #media{
     height: 100vh;
     width: 100%;
-    background-image: url(./img/image.png);
+    background-image:  url(./img/image.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -251,12 +256,32 @@ main{
 .imagenes-media{
     height: 80%;
     width: 100%;
-    display: flex;
-    flex-wrap:wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    justify-items: center;
 }
 
 .img-media{
+    height: 80%;
+    width: 80%;
 }
+
+.img-media img{
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.7) contrast(1.8);
+    border-radius: 1rem;
+}
+
+.img-media img:hover{
+    filter: brightness(1.1) hue-rotate(0) contrast(1.1);
+    transform: scale(1.03);
+    border-radius: 0.3rem;
+    
+}
+
 /* -------------------------------- FIN id=media --------------------------------*/
 
 /* -------------------------------- id=entradas --------------------------------*/
