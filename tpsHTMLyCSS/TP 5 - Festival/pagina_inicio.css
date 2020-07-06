@@ -1,4 +1,4 @@
-/* FUENTES */
+/* --------------------------------FUENTES-------------------------------- */
 @font-face {
     font-family: "subtitulos";
     src: url('./fonts/Raleigh\ Rock.ttf')
@@ -8,8 +8,10 @@
     font-family: "navigation";
     src: url('./fonts/CF_PunkRockShow.ttf')
 }
+/* --------------------------------FIN FUENTES-------------------------------- */
 
-/* ANIMACIONES */
+
+/* --------------------------------ANIMACIONES --------------------------------*/
 @keyframes float {
     0% {
       transform: rotate(-4deg);
@@ -18,8 +20,9 @@
       transform: rotate(4deg);
     }
   }
+/* --------------------------------FIN ANIMACIONES --------------------------------*/
 
-/* SCROLLBAR */
+/* -------------------------------- SCROLLBAR -------------------------------- */
 
 body::-webkit-scrollbar {
     width: 0.40rem;
@@ -33,7 +36,10 @@ body::-webkit-scrollbar {
     background: #E4D1AB;
   }
 
-/* MAIN AND BODY */
+/* -------------------------------- FIN SCROLLBAR -------------------------------- */
+
+
+/*-------------------------------- MAIN AND BODY /*--------------------------------*/
 body{
     margin: 0;
     padding: 0;
@@ -45,7 +51,9 @@ main{
     margin-left: 5rem;
 }
 
-/* Barra de navegación */
+/*-------------------------------- FIN MAIN AND BODY /*--------------------------------*/
+
+/*-------------------------------- Barra de navegación --------------------------------*/
 .navbar {
     position: fixed;
     background-color: #250303;
@@ -111,7 +119,10 @@ main{
     display: inline;
 }
 
-/* CONTENIDO DEL MAIN */
+/*-------------------------------- FIN Barra de navegación --------------------------------*/
+
+
+/* -------------------------------- CONTENIDO DEL MAIN -------------------------------- */
 
 /* subtitulos de cada sección */
 .div-subtitulo{
@@ -130,7 +141,7 @@ main{
     animation: float 4s ease-in-out infinite alternate;
 }
 
-/* id=Inicio */
+/* -------------------------------- id=Inicio --------------------------------*/
 #inicio{
     height: 100vh;
     display: flex;
@@ -145,7 +156,7 @@ main{
     z-index: -1;
 }
 
-/*Logo*/
+/*Logo de inicio*/
 .logo{
     height: 15rem;
     width: 38rem;
@@ -188,8 +199,9 @@ main{
     background-color: #A91B1D;
     color: #E4D1AB;
 }
+/* -------------------------------- FIN id=INICIO --------------------------------*/
 
-/* id=lineup*/
+/* --------------------------------id=lineup --------------------------------*/
 #lineup{
     height: 100vh;
     width: 100%;
@@ -225,7 +237,9 @@ main{
     text-align: center;
 }
 
-/* id=entradas*/
+/* -------------------------------- FIN id=lineup --------------------------------*/
+
+/* -------------------------------- id=entradas --------------------------------*/
 #entradas{
     height: 100vh;
     width: 100%;
@@ -246,7 +260,7 @@ main{
     border-radius: 0.5rem;
 }
 
-/* contenido de sec entradas */
+/*  contenido de sec entradas */
 
 .lista-entradas{
     width: 100%;
@@ -296,3 +310,8 @@ main{
 .tipo-entrada p{
     color: #A91B1D;
 }
+
+/* -------------------------------- FIN id=entradas --------------------------------*/
+
+
+/* -------------------------------- FIN CONTENIDO DEL MAIN --------------------------------*/
