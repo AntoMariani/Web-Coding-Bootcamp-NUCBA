@@ -1,0 +1,121 @@
+@font-face {
+    font-family: "NotoSans";
+    src: url('./fonts/NotoSans-Regular.ttf')
+}
+
+/* --------------------------------ANIMACIONES --------------------------------*/
+@keyframes float {
+    0% {
+      transform: rotate(-4deg);
+    }
+    100% {
+      transform: rotate(4deg);
+    }
+  }
+
+html{
+    font-family: "NotoSans";
+}
+
+body{
+    margin: 0em;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background-image: url(./img/mikky-koopac-hwQZLREASZk-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 33%;
+}
+
+.logo img{
+    animation: float 4s ease-in-out infinite alternate;
+    width: 100%;
+    height: 70%;
+}
+
+.login{
+    height: 100%;
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "NotoSans";
+    height: 33%;
+}
+
+form input{
+    font-size: 0.8em;
+    border: 0.3px solid #A91B1D;
+    color: #A91B1D;
+    background-color: #E4D1AB;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+form ::-webkit-input-placeholder{
+    color: #A91B1D;
+}
+
+form label{
+    margin: 1rem;
+    font-weight: bolder;
+    color: #E4D1AB;
+
+}
+
+form .button{
+    margin: 1rem;
+    background-color: #A91B1D;
+    color: #E4D1AB;
+}
+
+form .button:hover{
+    background-color: #E4D1AB;
+    color: #A91B1D;
+    border: 0.3px solid #A91B1D;
+}
+
+/* forgot - register - join */
+.Login_nav{
+    bottom:0;
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.Login_nav a:link{
+    color:#E4D1AB;
+    text-decoration: none;
+    font-family: "NotoSans";
+    font-size: 0.7em;
+}
+
+.Login_nav a:visited {
+    color: #660d0e;
+}
+
+.Login_nav a:hover {
+    color: #A91B1D;
+}
