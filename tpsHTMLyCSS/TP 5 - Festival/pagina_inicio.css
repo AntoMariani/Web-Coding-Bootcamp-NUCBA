@@ -13,6 +13,11 @@ html {
     font-family: "navigation";
     src: url('./fonts/CF_PunkRockShow.ttf')
 }
+
+@font-face {
+    font-family: "rock";
+    src: url('./fonts/TravelingTypewriter.ttf')
+}
 /* --------------------------------FIN FUENTES-------------------------------- */
 
 
@@ -61,7 +66,7 @@ main{
 /*-------------------------------- Barra de navegación --------------------------------*/
 .navbar {
     position: fixed;
-    background-color: #250303;
+    background-color: #5B0800;
     transition: width 100ms ease;
     top: 0;
     width: 5rem;
@@ -100,7 +105,7 @@ main{
 
 .nav-link:hover {
     filter: opacity(1);
-    background-color: #701012;
+    background-color: #A91B1D;
 }
 
 .link-text{
@@ -233,6 +238,11 @@ main{
 .fecha-lineup{
     color: #A91B1D;
     font-size: 1.7rem;
+    filter: opacity(0.8);
+}
+
+.fecha-lineup:hover{
+    filter: opacity(1);
 }
 
 .bands-lineup{
@@ -291,11 +301,36 @@ main{
         padding: 0;
         display: flex;
         flex-direction: column;
-        background-image: url(./img/back\ historia.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
 }
+
+.texto-historia{
+    background-image: url(./img/a33522008e0a472823e7bc91d4cbaafa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-historia p{
+    width: 100%;
+    height: fit-content;
+    height: 100%;
+    font-family: "rock";
+    text-align: center;
+    font-size: 1.4rem;
+    color: #A91B1D;
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+}
+
 /* -------------------------------- FIN id=historia --------------------------------*/
 
 /* -------------------------------- id=entradas --------------------------------*/
@@ -306,17 +341,10 @@ main{
     padding: 0;
     display: flex;
     flex-direction: column;
-    background-image: url(./img/pista.png);
+    background-image: url(./img/back\ historia.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-/* imagen de subtitulo para section entradas porque sino no se ve */
-#entradas .subtitulo{
-    background-image: url(./img/back-titulo-entradas.png);
-    padding: 0.7rem;
-    border-radius: 0.5rem;
 }
 
 /*  contenido de sec entradas */
@@ -333,7 +361,8 @@ main{
 /* cada CARD */
 .tipo-entrada{
     margin: 0;
-    background-image: url(./img/a33522008e0a472823e7bc91d4cbaafa.jpg);
+    /* background-image: url(./img/a33522008e0a472823e7bc91d4cbaafa.jpg); */
+    background-color: black;
     height: 40%;
     width: 45%;
     border-radius: 0.5rem;
@@ -349,25 +378,27 @@ main{
 
 .tipo-entrada:hover{
     filter: opacity(1);
-    border: 0.2rem solid #A91B1D;
-    margin: -0.2rem; /* para que no se mueva la div cuando aparece el borde en hovers*/
 }
 
 .titulo-tipo-entrada{
-    background-color: #A91B1D;
+    background-color: #5B0800;
     padding: 0.5rem ;
     margin-top: 0.4rem;
     margin-bottom: 0.4rem;
     font-size: 1.6rem;
 }
 
+.tipo-entrada:hover .titulo-tipo-entrada{
+    background-color: #A91B1D;
+}
+
 .precio-tipo-entrada{
     font-size: 1.6rem;
-    color: #A91B1D;
+    color: #E4D1AB;
 }
 
 .tipo-entrada p{
-    color: #A91B1D;
+    color: #E4D1AB;
 }
 
 /* -------------------------------- FIN id=entradas --------------------------------*/
