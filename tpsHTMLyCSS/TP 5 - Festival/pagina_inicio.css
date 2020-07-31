@@ -405,17 +405,6 @@ main{
     height: 100%;
     margin: 0;
 }
-
-/* pantallas mayores a 1150 */
-@media only screen and (min-width: 1150) {
-    .img-media{
-       width: 10%!important;
-    }
-    .img-media img{
-        width: 10%!important;
-    }
-}
-
 }
 
 /* pantallas chicas */
