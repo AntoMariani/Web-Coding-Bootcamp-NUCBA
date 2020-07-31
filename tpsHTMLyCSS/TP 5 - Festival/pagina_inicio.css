@@ -63,93 +63,9 @@ main{
 
 /*-------------------------------- FIN MAIN AND BODY /*--------------------------------*/
 
-/*-------------------------------- Barra de navegación --------------------------------*/
-.navbar {
-    position: fixed;
-    background-color: #5B0800;
-    transition: width 100ms ease;
-    top: 0;
-    width: 5rem;
-    height: 100vh;
-    z-index: 1;
-  }
-
-.navbar-nav{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-.nav-item {
-    width: 100%;
-}
-
-.nav-item:last-child{
-    margin-top: auto;
-}
-
-.nav-link{
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    text-decoration: none;
-    font-family: "subtitulos";
-    filter: opacity(0.8);
-    transition: 200ms ease;
-    font-size: 1.2rem;
-}
-
-.nav-link:hover {
-    filter: opacity(1);
-    background-color: #A91B1D;
-}
-
-.link-text{
-    display: none;
-    margin-left: 0.3rem;
-    
-}
-
-.nav-link svg{
-    width: 2rem;
-    min-width: 2rem;
-    margin: 0 1.5rem;
-}
-
-.navbar:hover{
-    width: 15rem;
-}
-
-.navbar:hover .link-text{
-    color: #E4D1AB;
-    display: inline;
-}
-
-/*-------------------------------- FIN Barra de navegación --------------------------------*/
-
+/* ACA VA BARRA */
 
 /* -------------------------------- CONTENIDO DEL MAIN -------------------------------- */
-
-/* subtitulos de cada sección */
-.div-subtitulo{
-    height: 20vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.subtitulo{
-    font-family: "subtitulos";
-    color: #E4D1AB;
-    text-align: center;
-    font-size: 2.7rem;
-    animation: float 4s ease-in-out infinite alternate;
-}
 
 /* -------------------------------- id=Inicio --------------------------------*/
 #inicio{
@@ -164,19 +80,6 @@ main{
     background-repeat: no-repeat;
     width: 100%;
     z-index: -1;
-}
-
-/*Logo de inicio*/
-.logo{
-    height: 15rem;
-    width: 38rem;
-}
-
-.logo img{
-    animation: float 4s ease-in-out infinite alternate;
-    width: 100%;
-    height: 100%;
-    margin: 0;
 }
 
 /* Subtitulos de #inicio */
@@ -226,7 +129,7 @@ main{
 
 .contenido-lineup{
     width: 100%;
-    height: 80vh;
+    height: 80%;
 }
 
 .fecha-lineup , .bands-lineup {
@@ -237,7 +140,7 @@ main{
 
 .fecha-lineup{
     color: #A91B1D;
-    font-size: 1.7rem;
+    font-size: 150%;
     filter: opacity(0.8);
 }
 
@@ -247,7 +150,7 @@ main{
 
 .bands-lineup{
     color: #E4D1AB;
-    font-size: 1.09rem;
+    font-size: 90%;
     font-weight: lighter;
     text-align: center;
 }
@@ -320,15 +223,15 @@ main{
 
 .texto-historia p{
     width: 100%;
-    height: fit-content;
     height: 100%;
     font-family: "rock";
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 100%;
     color: #A91B1D;
     display: flex;
     align-items: center;
-    margin: 3rem;
+    margin: 3%;
+    font-weight: bolder;
 }
 
 /* -------------------------------- FIN id=historia --------------------------------*/
@@ -376,11 +279,11 @@ main{
     text-align: center;
     color: #E4D1AB;
     font-family: "subtitulos";
-    filter: opacity(0.95);
+    filter: contrast(0.9) ;
 }
 
 .tipo-entrada:hover{
-    filter: opacity(1);
+    filter: contrast(1);
 }
 
 .titulo-tipo-entrada{
@@ -405,4 +308,319 @@ main{
 }
 
 /* -------------------------------- FIN id=entradas --------------------------------*/
+/*-------------------------------- Barra de navegación --------------------------------*/
+.navbar{
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: #5B0800;
+    transition: width 100ms ease;
+    z-index: 1;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.nav-item:last-child{
+    margin-top: auto;
+}
+
+.nav-link:hover {
+    filter: opacity(1);
+    background-color: #A91B1D;
+}
+
+.navbar-nav{
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-link svg{
+    width: 2rem;
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+
+.navbar:hover .link-text{
+    color: #E4D1AB;
+    display: inline;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    text-decoration: none;
+    font-family: "subtitulos";
+    filter: opacity(0.8);
+    transition: 200ms ease;
+    font-size: 1.2rem;
+}
+
+.link-text{
+    display: none;
+    margin-left: 0.3rem;
+}
+
+/*-------------------------------- FIN Barra de navegación --------------------------------*/
 /* -------------------------------- FIN CONTENIDO DEL MAIN --------------------------------*/
+
+/*-------------------------------- MEDIA QUERYS --------------------------------*/
+
+
+/* -------------------------------- pantallas grandes --------------------------------*/
+@media only screen and (min-width: 951px){
+
+.navbar:hover{
+    width: 15rem;
+}
+
+/* subtitulos de cada sección */
+.div-subtitulo{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo{
+    font-family: "subtitulos";
+    color: #E4D1AB;
+    text-align: center;
+    font-size: 2.7rem;
+    animation: float 4s ease-in-out infinite alternate;
+}
+
+.logo img{
+    animation: float 4s ease-in-out infinite alternate;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* pantallas mayores a 1150 */
+@media only screen and (min-width: 1150) {
+    .img-media{
+       width: 10%!important;
+    }
+    .img-media img{
+        width: 10%!important;
+    }
+}
+
+}
+
+/* pantallas chicas */
+
+@media only screen and (max-width: 950px) {
+
+/*-------------------------------- pantallas chicas Barra de navegación --------------------------------*/
+.navbar{
+    bottom: 0;
+    top: auto;
+    height: 5rem;
+    width: 100%;
+}
+
+.nav-item {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav{
+    flex-direction: row;
+}
+
+.navbar:hover .link-text{
+    display: none;
+}
+
+
+/*-------------------------------- pantallas chicas FIN Barra de navegación --------------------------------*/
+
+main {
+  margin: 0;
+  margin-bottom: 5rem;
+}
+
+/*Logo de inicio*/
+.logo{
+    height: 8rem;
+    width: 19rem;
+}
+
+.logo img{
+    animation: float 4s ease-in-out infinite alternate;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* subtitulos de cada sección */
+.div-subtitulo{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitulo{
+    font-family: "subtitulos";
+    color: #E4D1AB;
+    text-align: center;
+    font-size: 2.7rem;
+    animation: float 4s ease-in-out infinite alternate;
+}
+
+
+/* -------------------------------- pantallas chicas id=lineup --------------------------------*/
+#lineup{
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-lineup{
+    width: 100%;
+    height: fit-content;
+}
+
+/* -------------------------------- FIN pantallas chicas id=lineup --------------------------------*/
+
+/* -------------------------------- pantallas chicas id=media --------------------------------*/
+#media{
+    height: fit-content;
+    width: 100%;
+    background-image:  url(./img/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagenes-media{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.img-media{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+/* -------------------------------- FIN pantallas chicas id=media --------------------------------*/
+
+/* -------------------------------- pantallas chicas id=historia --------------------------------*/
+#historia{
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-bottom: 1rem;
+}
+
+.texto-historia{
+height: fit-content;
+width: 90%;
+}
+
+.texto-historia p{
+width: 100%;
+height: fit-content;
+font-size: 1rem;
+margin: 2rem;
+}
+
+/* -------------------------------- pantallas chicas FIN id=historia --------------------------------*/
+
+
+/* -------------------------------- pantallas chicas id=entradas --------------------------------*/
+#entradas{
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  contenido de sec entradas */
+
+.lista-entradas{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: space-between;
+    justify-items: center;
+}
+
+/* cada CARD */
+.tipo-entrada{
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: black;
+    height: 25%;
+    width: 80%;
+    border-radius: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: #E4D1AB;
+    font-family: "subtitulos";
+    filter: contrast(0.9) ;
+}
+
+.tipo-entrada:hover{
+    filter: contrast(1);
+}
+
+.titulo-tipo-entrada{
+    background-color: #5B0800;
+    padding: 0.5rem ;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    font-size: 1.6rem;
+}
+
+.tipo-entrada:hover .titulo-tipo-entrada{
+    background-color: #A91B1D;
+}
+
+.precio-tipo-entrada{
+    font-size: 1.6rem;
+    color: #E4D1AB;
+}
+
+.tipo-entrada p{
+    color: #E4D1AB;
+}
+
+/* --------------------------------  pantallas chicas FIN id=entradas --------------------------------*/
+
+}
+
