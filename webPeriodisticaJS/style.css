@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(208, 209, 224);
+}
+
+#contenedor-noticias {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.card {
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1%;
+    background-color: rgb(233, 234, 243);;
+}
+
+.imgcard {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgcard img {
+    height: 92%;
+    width: 90%;
+}
