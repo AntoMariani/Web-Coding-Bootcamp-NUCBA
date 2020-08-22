@@ -88,6 +88,7 @@ function crearCard(noticia) {
     divContenido.classList.add("contenidocard")
     div_card.appendChild(divContenido)
 
+    
     contenedorNoticias.appendChild(div_card) //appendea la div card al contenedor noticias
 }
 
